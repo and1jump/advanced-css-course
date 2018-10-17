@@ -23,11 +23,22 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25s);
     transition: all 0.5s 0.2s;
+
+    @include respond(phone) {
+      display: block;
+      width: 85%;
+      max-height: 500px;
+      overflow-y: scroll;
+    }
   }
 
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -35,6 +46,10 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+      padding: 1rem 2rem;
+    }
   }
 
   &__img {
@@ -58,6 +73,11 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+      margin-bottom: 2rem;
+    }
   }
 
   // Open states
@@ -83,6 +103,11 @@
       display: inline-block;
       transition: all 0.2s;
       line-height: 1;
+
+      @include respond(phone) {
+        top: 0.5rem;
+        right: 1.5rem;
+      }
     }
 
     &:hover {
