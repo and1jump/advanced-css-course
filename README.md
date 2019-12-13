@@ -1,2 +1,6 @@
 # advanced-css-course
-https://www.udemy.com/advanced-css-and-sass/?couponCode=GITHUB4
+
+View my demos:
+
+[Trillo](https://phazeoner.github.io/advanced-css-course/Trillo/)
+[Natours](https://phazeoner.github.io/advanced-css-course/Natours/)
